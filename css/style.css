@@ -1,0 +1,185 @@
+body{
+    margin: 20px;
+    background-color: #e2e6ea;
+    font-family: Tahoma;
+}
+.bla-bla{
+    padding: 20px;
+    background-color: #eceff0;
+    border: 1px;
+    border-radius: 20px;
+}
+  .wide-section {
+    margin-top: 40px;
+    flex: 1; /* Робимо широку секцію розтяжною, щоб займати всю доступну ширину */
+    background-color: rgb(243, 244, 245); /* Додаємо фоновий колір для виділення */
+    padding: 20px; /* Додаємо відступи для зручності */
+    border: 1px solid #dfe0e2;
+    border-radius: 20px;
+  }
+
+  .short-section {
+    flex-basis: 100px; /* Задаємо фіксовану ширину для короткої секції */
+    padding: 20px; /* Додаємо відступи для зручності */
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #000000;
+    border: 1px solid #5e6569;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+  }
+  .main-button:hover {
+    background-color: #3498db;
+    border: 1px solid #eceff0;
+  }
+  .small-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #5e6569;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .small-button:hover {
+    background-color: #3498db;
+    color: #fff;
+    border: 1px solid #3498db;
+  }
+  hr {
+    border: 0; /* Знімаємо рамку лінії */
+    height: 1px; /* Задаємо висоту лінії */
+    background-color: #ccc; /* Задаємо колір лінії */
+    margin: 20px 0; /* Задаємо відступи від лінії */
+  }
+  select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  /* Задаємо стилі для опцій у списку вибору */
+  option {
+    font-size: 16px;
+  }
+    /* Задаємо стилі для контейнера */
+    .container {
+        display: flex;
+        flex-direction: row;
+      }
+      /* Задаємо стилі для лівої колонки з текстом */
+      .left-column {
+        flex: 1; /* Розтягуємо ліву колонку на всю доступну ширину */
+        padding-right: 20px; /* Додаємо відступ зправа */
+      }
+      .column {
+        width: 45%;
+        padding: 20px;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px; /* Заокруглені кути для полів вводу */
+    }
+
+      /* Задаємо стилі для контейнера переключальників */
+      .toggle-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+      }
+  
+      /* Задаємо стилі для кульок (переключальників) */
+      .toggle {
+        margin-bottom: 12px;
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+  
+      .toggle input {
+        display: none;
+      }
+  
+      /* Задаємо стилі для підписів переключальників */
+      .toggle label {
+        margin-left: 10px;
+      }
+  
+      /* Задаємо стилі для ввімкненого переключальника */
+      .toggle input:checked + span {
+        background-color: #3498db;
+      }
+  
+      /* Задаємо стилі для кульки (переключальника) при ввімкненні */
+      .toggle span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+  
+      /* Задаємо стилі для анімації переміщення кульки (переключальника) */
+      .toggle input:checked + span {
+        transform: translateX(100%);
+      }
+      .ball {
+        justify-content: center;
+        position: absolute;
+        top: 40px; /* Зсув кульки вгору від верхньої межі колонки */
+        left: 45%; /* Центрування кульки в колонці */
+        transform: translateX(-50%);
+        width: 80px; /* Діаметр кульки */
+        height: 80px; /* Діаметр кульки */
+        background-color: rgb(243, 243, 243); /* Колір кульки */
+        border: 1px solid #e4e6e7;
+        border-radius: 50%; /* Закруглені кути для створення круглої форми */
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px; /* Округлені кути */
+      }
+      .fit-picture {
+        justify-content: center;
+        position: absolute;
+        top: -5px; /* Зсув кульки вгору від верхньої межі колонки */
+        left: 50%; /* Центрування кульки в колонці */
+        transform: translateX(-50%);
+        width: 80px; /* Діаметр кульки */
+        height: 80px; /* Діаметр кульки */
+      }
+      .paper{
+        width: 20px; /* Діаметр кульки */
+        height: 20px; /* Діаметр кульки */
+      }
